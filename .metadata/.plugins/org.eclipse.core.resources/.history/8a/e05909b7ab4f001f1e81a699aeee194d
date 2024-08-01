@@ -1,0 +1,16 @@
+package ex01;
+
+public class MainClass {
+	
+	public static void main(String[] args) {
+		
+		//자바방식
+//		SpringTest test = new SpringTest();
+//		test.hello();
+		
+		
+		
+		
+	}
+
+}

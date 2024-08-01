@@ -1,0 +1,10 @@
+package ex01;
+
+public class SpringTest {
+	
+	private void hello() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

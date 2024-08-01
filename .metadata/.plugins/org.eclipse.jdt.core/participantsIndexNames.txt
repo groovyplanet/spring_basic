@@ -1,0 +1,7 @@
+INDEX VERSION 1.134
+C:\Users\user\Desktop\course\spring\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1016718806.index
+\SpringMake\src\main\java
+C:\Users\user\Desktop\course\spring\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3761980533.index
+\SpringBasic\src\main\java
+C:\Users\user\Desktop\course\spring\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2658272158.index
+\SpringBasic\src\main\java

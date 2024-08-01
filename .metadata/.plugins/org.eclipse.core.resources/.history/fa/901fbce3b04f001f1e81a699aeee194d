@@ -1,0 +1,11 @@
+package ex02.setter;
+
+public class MyDataSource {
+	
+	private String url;
+	private String uid;
+	private String upw;
+	
+	
+
+}

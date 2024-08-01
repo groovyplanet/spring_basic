@@ -1,0 +1,9 @@
+package ex2.constuctor;
+
+public class MainClass {
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

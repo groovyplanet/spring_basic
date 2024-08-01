@@ -1,0 +1,16 @@
+package ex03.autowired;
+
+public class Printer {
+
+	private Document document;
+	
+	//생성자 주입
+	public Printer(Document document) {
+		this.document=document;
+	}
+	
+	
+	
+	//세터 주입
+	
+}

@@ -1,0 +1,12 @@
+package ex2.constructor;
+
+public class MainClass {
+	
+	public static void main(String[] args) {
+		
+		//자바 문법
+//		Hotel hotel = new Hotel(new Chef());		
+//		hotel.getChef().cooking();
+	}
+
+}

@@ -1,0 +1,6 @@
+package ex05.javaconfig;
+
+@Configuration
+public class JavaConfig {
+
+}

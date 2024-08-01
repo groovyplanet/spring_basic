@@ -1,0 +1,29 @@
+package ex03.autowired;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class Printer {
+
+	private Document document;
+	
+
+	//생성자 주입
+	@Autowired
+	public Printer(Document document) {
+		this.document=document;
+	}
+
+	
+	public Document getDocument() {
+		return document;
+	}
+	//세터 주입
+	public void setDocument(Document document) {
+		this.document = document;
+	}
+	
+	
+	
+	
+	
+}

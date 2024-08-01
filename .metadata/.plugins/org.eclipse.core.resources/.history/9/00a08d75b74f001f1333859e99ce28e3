@@ -1,0 +1,25 @@
+package ex03.autowired;
+
+public class Printer {
+
+	private Document document;
+	@Autowired
+	//생성자 주입
+	public Printer(Document document) {
+		this.document=document;
+	}
+
+	
+	public Document getDocument() {
+		return document;
+	}
+	//세터 주입
+	public void setDocument(Document document) {
+		this.document = document;
+	}
+	
+	
+	
+	
+	
+}

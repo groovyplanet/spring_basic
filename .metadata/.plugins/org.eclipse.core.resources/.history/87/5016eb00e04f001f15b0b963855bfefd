@@ -1,0 +1,20 @@
+package com.simple.controller;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.mvc.multiaction.MultiActionController;
+
+//컨트롤러 역할을 수행
+public class HomeController extends MultiActionController {
+	
+	@Override
+	protected ModelAndView handleRequestInternal(HttpServletRequest request, HttpServletResponse response)
+			throws Exception {
+		System.out.println("컨트롤러까지 연결됨..");
+		return null;
+	}
+	
+
+}

@@ -1,0 +1,19 @@
+package ex01;
+
+import org.springframework.context.support.GenericApplicationContext;
+
+public class MainClass {
+	
+	public static void main(String[] args) {
+		
+		//자바방식
+//		SpringTest test = new SpringTest();
+//		test.hello();
+		
+		GenericApplicationContext ctx = new GenericApplicationContext("applicaiton-context.xml");
+		
+		
+		
+	}
+
+}

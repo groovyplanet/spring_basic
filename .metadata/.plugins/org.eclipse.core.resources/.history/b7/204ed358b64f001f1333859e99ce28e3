@@ -1,0 +1,9 @@
+package ex03.autowired;
+
+public class Printer {
+
+	private Document document;
+	
+	
+	
+}

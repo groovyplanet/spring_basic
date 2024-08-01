@@ -1,0 +1,12 @@
+package ex02.setter;
+
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+public class MainClass {
+	
+	public static void main(String[] args) {
+		GenericXmlApplicationContext ctx = 
+				new GenericXmlApplicationContext("application-context.xml")
+	}
+
+}
