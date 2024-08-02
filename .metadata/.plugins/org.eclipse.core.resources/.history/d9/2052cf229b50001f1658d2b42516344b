@@ -1,0 +1,24 @@
+package com.simple.basic.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/service")
+public class ScoreController {
+	//목록
+	@RequestMapping("/scoreList")
+	public String scoreList() {
+		
+		return "service/scoreList";
+	}
+	
+	//등록
+	@RequestMapping("/scoreRegist")
+	public String scoreList() {
+		
+		return "service/scoreRegist";
+	}
+	
+
+}

@@ -1,0 +1,8 @@
+package com.simple.basic.service.score;
+
+public interface ScoreService {
+	
+	void regist();
+	
+
+}

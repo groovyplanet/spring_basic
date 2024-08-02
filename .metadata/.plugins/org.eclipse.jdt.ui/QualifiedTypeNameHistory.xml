@@ -4,5 +4,14 @@
     <fullyQualifiedTypeName name="ex2.constuctor.Hotel"/>
     <fullyQualifiedTypeName name="ex2.constuctor.Chef"/>
     <fullyQualifiedTypeName name="org.springframework.context.support.GenericXmlApplicationContext"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Qualifier"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+    <fullyQualifiedTypeName name="ex01.SpringTest"/>
+    <fullyQualifiedTypeName name="ex02.constructor.Chef"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
     <fullyQualifiedTypeName name="ex02.setter.MyDataSource"/>
+    <fullyQualifiedTypeName name="ex02.setter.MemberDAO"/>
+    <fullyQualifiedTypeName name="org.springframework.web.servlet.mvc.multiaction.MultiActionController"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
 </qualifiedTypeNameHistroy>

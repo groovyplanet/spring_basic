@@ -1,0 +1,36 @@
+package com.simple.basic.controller;
+
+import java.util.Date;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.simple.basic.command.MemberVO;
+
+public class QuizController {
+
+	@RequestMapping("/quiz01")
+	public String quizview() { // vo로 맵핑하고 info로 넘긴다.
+
+		System.out.println("퀴즈 이동");
+		
+		
+		return "quiz/quiz01";
+	}
+	
+	@RequestMapping(value = "/quiz01", method = RequestMethod.POST)
+	public String quizresult(MemberVO vo) {
+
+		String id =vo.getId();
+		String pw = vo.getPw();
+		String name = vo.getName();
+		String email = vo.getEmail();
+
+		return "quiz/quiz_ok";
+	}
+	
+	
+	
+	
+}

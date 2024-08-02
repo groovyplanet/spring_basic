@@ -1,0 +1,70 @@
+package com.simple.basic.controller;
+
+import java.util.Date;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+
+import com.simple.basic.command.MemberVO;
+@Controller
+@RequestMapping("/quiz")
+public class QuizController {
+
+	@RequestMapping("/quiz01")
+	public String quizview() { // vo로 맵핑하고 info로 넘긴다.
+
+		System.out.println("퀴즈 이동");
+		
+		
+		return "quiz/quiz01";
+	}
+	
+	@RequestMapping(value = "/quiz01", method = RequestMethod.POST)
+	public String quizresult(@ModelAttribute("info") MemberVO vo) {
+
+
+		
+
+		return "quiz/quiz_ok";
+	}
+	
+	@RequestMapping("/quiz02")
+	public String quizbirth() { // vo로 맵핑하고 info로 넘긴다.
+
+		System.out.println("퀴즈 이동");
+		
+		
+		return "quiz/quiz02";
+	}
+	
+	@RequestMapping(value = "/quiz02", method = RequestMethod.POST)
+	public String quizresult1(MemberVO vo, RedirectAttributes ra) {
+		
+		   int year = vo.getYear();
+		    int month = vo.getMonth();
+		    int day = vo.getDay();
+		    String msg = vo.getMsg();
+		
+		 ra.addFlashAttribute("msg", "생일 축하합니다.");
+		    ra.addFlashAttribute("year", year);
+		    ra.addFlashAttribute("month", month);
+		    ra.addFlashAttribute("day", day);
+		    ra.addFlashAttribute("userMsg", msg);  // 사용자가 입력한 메시지를 별도로 저장합니다.
+		
+		
+		return "quiz/quiz_result";
+		
+	}
+	
+	}
+	
+	
+	
+	
+	
+	
+

@@ -1,0 +1,14 @@
+package com.simple.basic.service.score;
+
+import org.springframework.stereotype.Service;
+
+import com.simple.basic.command.ScoreVO;
+
+@Service("scoreService") //반드시 component-scan에 의하여 읽혀야 함.
+public class ScoreServiceImpl implements ScoreService {
+	@Override
+	public void regist(ScoreVO vo) {
+
+		System.out.println("Seriver layer : " + vo);
+	}
+}

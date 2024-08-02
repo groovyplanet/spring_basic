@@ -1,0 +1,12 @@
+package com.simple.basic.service.score;
+
+import com.simple.basic.command.ScoreVO;
+
+@Serivce
+public class ScoreServiceImpl implements ScoreService {
+	@Override
+	public void regist(ScoreVO vo) {
+
+		System.out.println("Seriver layer : " + vo);
+	}
+}

@@ -1,0 +1,9 @@
+package com.simple.basic.service.score.impl;
+
+import com.simple.basic.command.ScoreVO;
+
+public interface ScoreDAO {
+	public void regist(ScoreVO vo); //등록
+
+
+}

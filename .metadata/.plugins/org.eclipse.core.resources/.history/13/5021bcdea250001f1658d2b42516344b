@@ -1,0 +1,15 @@
+package com.simple.basic.service.score.impl;
+
+import com.simple.basic.command.ScoreVO;
+
+public class ScoreDAOImpl implements ScoreDAO {
+
+	@Override
+	public void regist(ScoreVO vo) {
+		// TODO Auto-generated method stub
+		System.out.println("repository layer");
+		
+	}
+	
+	
+}

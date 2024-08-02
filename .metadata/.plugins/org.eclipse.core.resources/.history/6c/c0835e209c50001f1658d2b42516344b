@@ -1,0 +1,12 @@
+package com.simple.basic.command;
+
+public class ServiceVO {
+	
+	private String name;
+	private int kor;
+	private int eng;
+	private int math;
+	
+	
+
+}

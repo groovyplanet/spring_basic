@@ -1,0 +1,29 @@
+package com.simple.basic.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+
+public class QuizController {
+
+	@RequestMapping("/quiz01")
+	public String quizview() { // vo로 맵핑하고 info로 넘긴다.
+
+		System.out.println("퀴즈 이동");
+		
+		
+		return "quiz/quiz01";
+	}
+	
+	@RequestMapping("/quiz01")
+	public String quizresult() { // vo로 맵핑하고 info로 넘긴다.
+
+		System.out.println("퀴즈 이동");
+		
+		
+		return "quiz/quiz01";
+	}
+	
+	
+	
+	
+	
+}

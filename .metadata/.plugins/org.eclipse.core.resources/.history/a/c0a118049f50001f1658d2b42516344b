@@ -1,0 +1,5 @@
+package com.simple.basic.service.score;
+
+public class ScoreServiceImpl implements ScoreService{
+
+}

@@ -16,7 +16,8 @@ public class HomeController{
 	@RequestMapping("/test/aaa")
 	public String home() {
 		System.out.println("컨트롤러 지나가요 ! ");
-		return "/WEB-INF/views/home.jsp";
+//		return "/WEB-INF/views/home.jsp";
+		return "home";
 	}
 	
 	

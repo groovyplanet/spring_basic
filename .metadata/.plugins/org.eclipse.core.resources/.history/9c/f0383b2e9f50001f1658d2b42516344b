@@ -1,0 +1,9 @@
+package com.simple.basic.service.score;
+
+public class ScoreServiceImpl implements ScoreService{
+@Override
+public void regist(ScoreVO vo) {
+	// TODO Auto-generated method stub
+	
+}
+}

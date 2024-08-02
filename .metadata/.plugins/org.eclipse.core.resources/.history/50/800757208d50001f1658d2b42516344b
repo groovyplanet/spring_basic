@@ -1,0 +1,17 @@
+package com.simple.basic.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+
+public class QuizController {
+
+	@RequestMapping("/quiz")
+	public String loginView() { // vo로 맵핑하고 info로 넘긴다.
+
+		System.out.println("리다이렉트 타고 나감");
+		
+		
+		return "response/login";
+	}
+	
+	
+}

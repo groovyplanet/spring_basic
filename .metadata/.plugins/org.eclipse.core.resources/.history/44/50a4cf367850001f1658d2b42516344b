@@ -1,0 +1,5 @@
+package com.simple.basic.command;
+
+public class MemberVO { //value object(=DTO와 비슷함)
+
+}
