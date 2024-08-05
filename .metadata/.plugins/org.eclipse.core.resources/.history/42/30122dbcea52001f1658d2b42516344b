@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+
+<mapper namespace="com.simple.basic.service.score.ScoreMapper">
+
+
+	<!-- 
+	매개변수는 1개여야 함. 
+	VO타입의 객체라면 #{getter} 사용해서 매개변수를 참조함
+	-->
+	<insert id="regist">
+	INSERT INTO(SNO,NAME,KOR,ENG,MATH)
+	VALUES(SCORE_SEQ.NEXTVAL, #{name}, #{kor}, #{eng}, #{math})
+
+	</insert>
+
+
+</mapper>

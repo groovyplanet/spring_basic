@@ -1,0 +1,5 @@
+package com.simple.basic.util.aop;
+
+public class LogAdvice {
+
+}

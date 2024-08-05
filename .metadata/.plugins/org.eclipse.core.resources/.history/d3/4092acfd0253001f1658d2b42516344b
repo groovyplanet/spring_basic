@@ -1,0 +1,18 @@
+package com.simple.basic.util.aop;
+
+import org.aspectj.lang.annotation.Aspect;
+import org.springframework.stereotype.Component;
+
+@Aspect // AOP 클래스
+@Component //이 클래스는 component-scan에 읽혀서 bean으로 생성됨
+public class LogAdvice {
+	
+	public void beforeLog() {
+		System.out.println("==메서드 실행전 동작--");
+	}
+	public void afterLog() {
+		
+	}
+	
+
+}

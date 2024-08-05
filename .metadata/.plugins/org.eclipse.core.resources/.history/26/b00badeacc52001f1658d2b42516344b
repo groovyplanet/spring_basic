@@ -1,0 +1,8 @@
+package com.simple.basic;
+
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+@RunWith(SpringJUnit4ClassRunner.class) //junit을 스프링 테스트 코드로 실행시킴
+public class JdbcTest {
+
+}

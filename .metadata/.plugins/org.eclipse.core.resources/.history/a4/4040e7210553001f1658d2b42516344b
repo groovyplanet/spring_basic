@@ -1,0 +1,38 @@
+package com.simple.basic.util.aop;
+
+import org.aspectj.lang.annotation.After;
+import org.aspectj.lang.annotation.AfterThrowing;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+import org.springframework.stereotype.Component;
+
+@Aspect // AOP 클래스
+@Component // 이 클래스는 component-scan에 읽혀서 bean으로 생성됨
+public class LogAdvice {
+    
+    // Advice - 공통 기능
+    // Pointcut - Advice를 적용할 메서드에 대해 정의하는 규칙
+    
+//    @Before("execution(* com.simple.basic.controller.*Controller.*(..))")
+	@Before("execution(* com.simple.basic.service.score.*ScoreServiceImpl.*(..))")
+	public void beforeLog() {
+        System.out.println("--메서드 실행 전 동작--");
+
+        
+    }
+
+//    @After("execution(* com.simple.basic.controller.*Controller.*(..))")
+	@After("execution(* com.simple.basic.service.score.*ScoreServiceImpl.*(..))")
+    public void afterLog() {
+        System.out.println("--메서드 실행 후 동작 --");
+    }
+	
+	@AfterThrowing(pointcut = "execution(* com.simple.basic.service.score.*ScoreServiceImpl.*(..))",
+					throwing = "e" //에러를 처리할 변수명 
+					)
+	public void exceptionLog(Exception e) {
+		System.out.println("----");
+	}
+	
+	
+}

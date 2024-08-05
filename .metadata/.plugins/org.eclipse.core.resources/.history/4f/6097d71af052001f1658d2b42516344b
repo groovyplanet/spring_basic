@@ -1,0 +1,12 @@
+package com.simple.basic.command;
+
+import org.springframework.ui.Model;
+
+public class BoardVO {
+	
+	private String name;
+	private String title;
+	
+	
+
+}

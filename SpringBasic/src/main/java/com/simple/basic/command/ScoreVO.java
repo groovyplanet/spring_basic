@@ -2,23 +2,30 @@ package com.simple.basic.command;
 
 public class ScoreVO {
 	
+	private int sno;
 	private String name;
 	private String kor;
 	private String eng;
 	private String math;
 	
-	public ScoreVO(){
+	
+	
+	public ScoreVO() {
 		
 	}
-	
-	
-	
-	public ScoreVO(String name, String kor, String eng, String math) {
+	public ScoreVO(int sno, String name, String kor, String eng, String math) {
 		super();
+		this.sno = sno;
 		this.name = name;
 		this.kor = kor;
 		this.eng = eng;
 		this.math = math;
+	}
+	public int getSno() {
+		return sno;
+	}
+	public void setSno(int sno) {
+		this.sno = sno;
 	}
 	public String getName() {
 		return name;
@@ -44,6 +51,8 @@ public class ScoreVO {
 	public void setMath(String math) {
 		this.math = math;
 	}
+	
+	
 	
 	
 

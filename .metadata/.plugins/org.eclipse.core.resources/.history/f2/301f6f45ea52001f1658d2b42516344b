@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+  
+  
+  <mapper namespace="com.simple.basic.service.score.ScoreMapper">
+  
+  
+  <!-- 매개변수는 1개여야 함. -->
+  <insert id="regist">
+  
+  
+  </insert>
+  
+  
+  </mapper>

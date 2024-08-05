@@ -1,0 +1,31 @@
+package com.simple.basic.service.board;
+
+import java.util.ArrayList;
+
+import org.springframework.stereotype.Service;
+
+import com.simple.basic.command.BoardVO;
+import com.simple.basic.command.ScoreVO;
+@Service("b")
+public class BoardServiceImpl implements BoardService{
+	
+	@Override
+	public void deleteboard(int num) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public ArrayList<BoardVO> getBoard() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public void register(BoardVO vo) {
+		// TODO Auto-generated method stub
+		
+	}
+	public BoardServiceImpl() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

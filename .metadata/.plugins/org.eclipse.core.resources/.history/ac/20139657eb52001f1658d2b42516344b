@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+
+<mapper namespace="com.simple.basic.service.score.ScoreMapper">
+
+
+	<!-- 
+	매개변수는 1개여야 함. 
+	VO타입의 객체라면 #{getter} 사용해서 매개변수를 참조함
+	-->
+	<insert id="regist" parameterType="com.simple.basic.command.ScoreVO">
+	INSERT INTO(SNO,NAME,KOR,ENG,MATH)
+	VALUES(SCORE_SEQ.NEXTVAL, #{name}, #{kor}, #{eng}, #{math})
+
+	</insert>
+	
+	<!-- resultType="select가 반환받을 타입" -->
+	
+	<select id="getScore" resultType="com.simple.basic.command.ScoreVO">
+	SELECT * FROM SCORE ORDER BY SNO DESC
+	</select>
+	
+	<!-- 파라미터가 1개면 , 인터페이스의 매개변수명을 #{매개변수}쓰면 됩니다. -->
+	
+	<delete id="delete" parameterType="int">
+	DELETE FROM SCORE WHERE SNO=#{SNO}
+	</delete>
+
+
+</mapper>

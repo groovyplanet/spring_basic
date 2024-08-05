@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.simple.basic.command.ScoreVO;
 import com.simple.basic.service.score.ScoreService;
@@ -51,6 +52,9 @@ public class ScoreController {
 		
 		return "service/scoreResult";
 	}
+	
+	
+	//폼요청
 	@RequestMapping(value="/scoreForm",method=RequestMethod.POST)
 	public String scoreForm(ScoreVO vo) { //값 받기
 		
@@ -58,6 +62,17 @@ public class ScoreController {
 
 		
 		return "service/scoreResult"; //결과화면
+	}
+	
+	
+	//삭제요청
+	@RequestMapping("/deleteScore")
+	public String deleteScore(@RequestParam("sno") int sno) {
+		
+		
+		scoreservice.delete(sno);
+		
+		return "redirect:/service/scoreList"; //다시 목록화면으로
 	}
 	
 	

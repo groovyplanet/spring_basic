@@ -1,0 +1,33 @@
+package com.simple.basic.service.board;
+
+import java.util.ArrayList;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.simple.basic.command.BoardVO;
+import com.simple.basic.service.board.*;
+
+@Service("z")
+public class BoardServiceImpl implements BoardService {
+
+    @Autowired
+    private BoardMapper boardMapper;
+
+    @Override
+    public void register(BoardVO vo) {
+        boardMapper.insertBoard(vo);
+    }
+
+    @Override
+    public ArrayList<BoardVO> getBoard() {
+        return boardMapper.selectBoardList();
+    }@Override
+    public void delete(BoardVO vo) {
+    	// TODO Auto-generated method stub
+    	
+    }
+    
+    
+    
+}

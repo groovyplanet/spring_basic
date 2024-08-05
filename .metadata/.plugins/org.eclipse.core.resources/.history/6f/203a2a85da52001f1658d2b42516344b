@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+
+<!-- 테이블의 _를 자바의 카멜로 변경 -->
+	<settings>
+		<setting name="mapUnderscoreToCamelCase" value="true" />
+	</settings>
+	<!-- db정보는 bean의 주입으로 들어감.. -->
+	<!-- mapper위치도 bean 주입으로 들어감.. -->
+
+
+</configuration>

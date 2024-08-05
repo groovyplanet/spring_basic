@@ -1,0 +1,17 @@
+package com.simple.basic.service.board;
+
+import java.util.ArrayList;
+
+import org.apache.ibatis.annotations.Mapper;
+
+import com.simple.basic.command.ScoreVO;
+
+@Mapper
+public interface BoardMapper {
+
+	public void register(ScoreVO vo); //등록
+	public ArrayList<ScoreVO> getBoard(); //조회
+
+	
+	
+}

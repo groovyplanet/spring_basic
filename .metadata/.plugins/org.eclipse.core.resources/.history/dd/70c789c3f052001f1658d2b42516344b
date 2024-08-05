@@ -1,0 +1,12 @@
+package com.simple.basic.service.board;
+
+import java.util.ArrayList;
+
+import com.simple.basic.command.ScoreVO;
+
+public class BoardServiceImpl implements BoardService{
+	
+	
+	
+
+}

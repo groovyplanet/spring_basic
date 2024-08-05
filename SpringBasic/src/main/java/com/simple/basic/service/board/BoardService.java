@@ -1,0 +1,15 @@
+package com.simple.basic.service.board;
+
+import java.util.ArrayList;
+
+import com.simple.basic.command.BoardVO;
+import com.simple.basic.command.ScoreVO;
+
+public interface BoardService {
+	
+	public void register(BoardVO vo); // 등록 BoardRegister
+    public ArrayList<BoardVO> getBoard(); //목록조회 boardList
+    public void delete(int num);
+    
+
+}
