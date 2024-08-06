@@ -1,8 +1,0 @@
-package com.simple.basic.util.aop;
-
-import org.aspectj.lang.annotation.Aspect;
-
-@Aspect
-public class LogAdvice {
-
-}
